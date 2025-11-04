@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab4">
+
+        <!-- Activitatea principală -->
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"
@@ -18,21 +20,17 @@
             android:theme="@style/Theme.Lab4">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- ✅ TODO 4: declarăm ComposeActivity -->
         <activity
             android:name=".presentation.ComposeActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Lab4">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.Lab4" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
